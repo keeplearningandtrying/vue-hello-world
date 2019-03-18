@@ -14,17 +14,19 @@
         <span class="mr-2">Latest Release</span>
       </v-btn>
     </v-toolbar>
-
-    <v-spacer></v-spacer>
-    <v-spacer></v-spacer>
-
-    <div id="app">
+ 
+    <v-content>
+    <v-layout text-xs-center wrap>
+    <v-flex>
       <div id="nav">
+	<br></br>
         <router-link to="/">Home</router-link> |
         <router-link to="/about">About</router-link>
       </div>
       <router-view />
-    </div>
+    </v-flex>
+    </v-layout>
+    </v-content>
   </v-app>
 </template>
 
